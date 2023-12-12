@@ -7,6 +7,11 @@ public class Apotheke {
     private Medikament[] medikamente = new Medikament[100];
 
 
+    public Apotheke(String ort, String besitzer){
+        this.ort = ort;
+        this.besitzer = besitzer;
+    }
+
 
     public void gebeVerfuegbareMedikamenteAus(){
         for (Medikament medi : medikamente ){
